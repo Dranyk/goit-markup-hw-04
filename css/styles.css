@@ -176,6 +176,10 @@ address {
     padding-bottom: 60px;
 }
 
+.footer-container {
+    display: flex;
+}
+
 
 .actual-address {
     color: white;
@@ -199,6 +203,19 @@ address {
 .contact-footer a:focus {
     color: var(--accent-color);
     }
+
+.join > .text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.join {
+    margin-left: 70px;
+}
 /* hero */
 
 .hero {
@@ -266,11 +283,27 @@ address {
     display: block;
     content: "";
     height: 120px;
-    background-image: url(../images/Group\ 1.png);
-    background-size: contain;
+    background-size: 70px;
     background-position: center;
     background-repeat: no-repeat;
+    background-color: var(--secondary-light-color);
     border-radius: 4px;
+}
+
+.icon-antenna::before{
+    background-image: url(../images/antenna.svg);
+}
+
+.icon-clock::before{
+    background-image: url(../images/clock.svg);
+}
+
+.icon-diagram::before{
+    background-image: url(../images/diagram.svg);
+}
+
+.icon-astronaut::before{
+    background-image: url(../images/astronaut.svg);
 }
 
 .feature-list .item + .item {
@@ -361,6 +394,7 @@ address {
 .filter-section button:focus {
     color: white;
     background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
  
 .filter-section{
@@ -382,6 +416,11 @@ address {
     margin-right: 30px;
     margin-bottom: 30px;
     border-top: none;
+}
+
+.grid:hover,
+.grid:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .grid:nth-child(3n) {
