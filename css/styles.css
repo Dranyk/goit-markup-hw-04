@@ -152,6 +152,10 @@ margin-left: auto;
 .contact-nav a{
     color: #757575;
     
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -159,10 +163,23 @@ margin-left: auto;
     text-decoration: none;
 }
 
-.contact-nav a:hover,
-.contact-nav a:focus {
+.page-header .contact {
+    padding: 32px 0;
+    align-items: center;
+}
+
+.icon-contact {
+    fill: currentColor;
+    margin-right: 10px;
+    padding-top: 2px;
+}
+
+
+.page-header .contact:hover,
+.page-header .contact:focus {
     color: var(--accent-color);
-    }
+}
+    
     
 /* footer */
 
@@ -178,6 +195,7 @@ address {
 
 .footer-container {
     display: flex;
+    align-items: baseline;
 }
 
 
@@ -216,6 +234,35 @@ address {
 .join {
     margin-left: 70px;
 }
+
+.join-icon {
+    fill: currentColor;
+}
+
+.join-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    width: 44px;
+    height: 44px;
+    color: #fff;
+}
+.social .join-item:not(:last-child) {
+    width: calc((100% - 3 * 10px) / 4);
+    margin-right: 10px;
+}
+
+
+.join-link:hover,
+.join-link:focus {
+    background-color: var(--accent-color);
+    color: #fff;
+}
+
 /* hero */
 
 .hero {
@@ -279,32 +326,15 @@ address {
     width: 270px;
 }
 
-.feature-list .item::before {
-    display: block;
-    content: "";
+
+.feature-list .icon {
+    padding: 25px 100px 25px 100px;
+    width: 270px;
     height: 120px;
-    background-size: 70px;
-    background-position: center;
-    background-repeat: no-repeat;
+    margin-bottom: 30px;
     background-color: var(--secondary-light-color);
-    border-radius: 4px;
 }
 
-.icon-antenna::before{
-    background-image: url(../images/antenna.svg);
-}
-
-.icon-clock::before{
-    background-image: url(../images/clock.svg);
-}
-
-.icon-diagram::before{
-    background-image: url(../images/diagram.svg);
-}
-
-.icon-astronaut::before{
-    background-image: url(../images/astronaut.svg);
-}
 
 .feature-list .item + .item {
     margin-left: 30px;
@@ -356,6 +386,7 @@ address {
 }
 
 .team-list .item {
+    background-color: #fff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
@@ -381,6 +412,80 @@ address {
     padding-top: 30px;
     padding-bottom: 30px;
     text-align: center;
+}
+
+.social {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.social-team {
+    padding-right: 32px;
+    padding-left: 32px;
+}
+
+.social-team > li:not(:last-child) {
+    width: calc((100% - 3 * 10px) / 4);
+    margin-right: 10px;
+}
+
+.team-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    border: none;
+    border-radius: 50px;
+    width: 44px;
+    height: 44px;
+    color: #AFB1B8;
+
+}
+
+.team-icon {
+    fill: currentColor;
+}
+
+.team-link:hover,
+.team-link:focus {
+    background-color: var(--accent-color);
+    color: #fff;
+}
+
+/* Client */
+
+.client {
+    padding-bottom: 94px;
+}
+
+.client-list {
+    display: flex;
+}
+
+.client-list .client-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.client-link {
+    color: #AFB1B8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    width: 170px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+
+.client-icon {
+    fill: currentColor;
+}
+
+.client-link:hover,
+.client-link:focus {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
 }
 
 /* Prtfolio style */

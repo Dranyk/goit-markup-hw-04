@@ -20,10 +20,25 @@
                     <li class="item"><a href="" class="link">Контакты</a></li>
                 </ul>
             </nav>
-                <ul class="contact-nav main-nav">
-                    <li class="item"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                    <li class="item"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-                </ul>
+            <ul class="contact-nav main-nav">
+                <li class="item">
+                    <a href="mailto:info@devstudio.com" class="contact">
+                        <svg class="icon-contact" width="16" height="12">
+                            <use href="/goit-markup-hw-04/images/sprite.svg#envelope"></use>
+                        </svg>
+                        info@devstudio.com
+                    </a>
+                </li>
+
+                <li class="item">
+                    <a href="tel:+380961111111" class="contact">
+                        <svg class="icon-contact" width="10" height="16">
+                            <use href="/goit-markup-hw-04/images/sprite.svg#smartphone"></use>
+                        </svg>
+                        +38 096 111 11 11
+                    </a>
+                </li>
+            </ul>
         </div>
                     
     </header>
@@ -115,15 +130,54 @@
     </main>
 
     <footer class="footer">
-        <div class="container">
-            <a class="logo" href=""><span class="accent">Web</span>Studio</a>
-            <address>
-                <ul class="contact-footer">
-                    <li class="item"><a href="https://goo.gl/maps/sERGqYDvzHYtQd6Q8" target="_blank" class="actual-address">г. Киев, пр-т Леси Украинки, 26</a></li>
-                    <li class="item"><a href="mailto:info@example.com" class="contact">info@example.com</a></li>
-                    <li class="item"><a href="tel:+380991111111" class="contact">+38 099 111 11 11</a></li>
+        <div class="container footer-container">
+            <div>
+                <a class="logo" href=""><span class="accent">Web</span>Studio</a>
+                <address>
+                    <ul class="contact-footer">
+                        <li class="item"><a href="https://goo.gl/maps/sERGqYDvzHYtQd6Q8" target="_blank" class="actual-address">г. Киев, пр-т Леси Украинки, 26</a></li>
+                        <li class="item"><a href="mailto:info@example.com" class="contact">info@example.com</a></li>
+                        <li class="item"><a href="tel:+380991111111" class="contact">+38 099 111 11 11</a></li>
+                    </ul>
+                </address>
+            </div>
+            
+            <div class="join">
+                <p class="text">присоединяйтесь</p>
+                <ul class="social social-join">
+                    <li class="join-item">
+                        <a class="join-link">
+                            <svg class="join-icon" height="20px" width="20px">
+                                <use href="/goit-markup-hw-04/images/sprite.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li class="join-item">
+                        <a class="join-link">
+                            <svg class="join-icon" height="20px" width="20px">
+                                <use href="/goit-markup-hw-04/images/sprite.svg#twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li class="join-item">
+                        <a class="join-link">
+                            <svg class="join-icon" height="20px" width="20px">
+                                <use href="/goit-markup-hw-04/images/sprite.svg#facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li class="join-item">
+                        <a class="join-link">
+                            <svg class="join-icon" height="20px" width="20px">
+                                <use href="/goit-markup-hw-04/images/sprite.svg#linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
                 </ul>
-            </address>
+            </div>
         </div>
     </footer>
 </body>
